@@ -1,0 +1,15 @@
+rootProject.name = 'ru.example'
+include 'example-1'
+include 'example-2'
+
+include 'example-1:client'
+//findProject(':example-1:client')?.name = 'client'
+include 'example-1:server'
+//findProject(':example-1:server')?.name = 'server'
+
+include 'example-2:client-service'
+//findProject(':example-2:client-service')?.name = 'client-service'
+include 'example-2:movie-service'
+//findProject(':example-2:movie-service')?.name = 'movie-service'
+include 'example-2:movie-service'
+
